@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSI导航设置</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="popup-header">
+      <h1><i class="fas fa-rocket"></i> RSI导航设置</h1>
+      <p>自定义您的侧边栏导航体验</p>
+    </div>
+    
+    <div class="tabs">
+      <button class="tab active" id="manage-tab">链接管理</button>
+      <button class="tab" id="add-tab">添加链接</button>
+    </div>
+    
+    <!-- 添加链接表单 - 修正初始状态为非激活 -->
+    <div class="tab-content" id="add-link-form">
+      <div class="form-container">
+        <div class="form-group">
+          <label for="link-name"><i class="fas fa-font"></i> 链接名称</label>
+          <input type="text" id="link-name" placeholder="例如：飞船交易市场" maxlength="30">
+        </div>
+        
+        <div class="form-group">
+          <label for="link-url"><i class="fas fa-link"></i> URL地址</label>
+          <input type="text" id="link-url" placeholder="https://robertsspaceindustries.com/market">
+        </div>
+        
+        <!-- 错误信息容器 -->
+        <div id="add-error"></div>
+        
+        <div class="btn-container">
+          <button type="button" class="btn btn-primary" id="add-link-btn">
+            <i class="fas fa-plus-circle"></i> 添加链接
+          </button>
+          <button type="button" class="btn btn-outline" id="cancel-btn">
+            <i class="fas fa-times"></i> 取消
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 链接管理列表 - 修正初始状态为激活 -->
+    <div class="tab-content active" id="manage-links">
+      <div class="form-container">
+        <h2><i class="fas fa-list"></i> 自定义链接</h2>
+        
+        <div class="link-list" id="links-container">
+          <!-- 链接将通过JavaScript动态添加 -->
+        </div>
+        
+        <div class="btn-container">
+          <button class="btn btn-primary" id="add-new-link">
+            <i class="fas fa-plus"></i> 添加新链接
+          </button>
+        </div>
+      </极>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
