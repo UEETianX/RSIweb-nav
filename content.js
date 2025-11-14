@@ -104,7 +104,7 @@
           const linkElement = document.createElement('a');
           linkElement.href = link.url;
           linkElement.className = 'nav-item';
-          linkElement.target = '_blank';
+          linkElement.target = '_self';
           linkElement.innerHTML = `
             <i class="fas fa-${link.icon || 'link'}"></i>
             <span class="nav-text">${link.name}</span>
