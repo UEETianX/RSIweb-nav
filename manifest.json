@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "RSI官网导航栏",
-  "version": "1.4",
+  "version": "1.5",
   "description": "在RSI官网左侧添加分类悬浮导航栏，支持自定义链接功能",
   "permissions": ["storage"],
   "host_permissions": ["https://robertsspaceindustries.com/*","https://support.robertsspaceindustries.com/*"],
