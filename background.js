@@ -19,7 +19,7 @@ chrome.runtime.onInstalled.addListener(() => {
         {name: "我的舰队", url: "https://robertsspaceindustries.com/account/organization", icon: "anchor"},
         {name: "我的邀请", url: "https://robertsspaceindustries.com/account/referral", icon: "share-alt"},
         {name: "PTU复制", url: "https://robertsspaceindustries.com/en/account/copy/ptu", icon: "cloud-download"},
-        {name: "角色修复", url: "https://robertsspaceindustries.com/en/account/wrench", icon: "repeat"},
+        {name: "角色修复", url: "https://robertsspaceindustries.com/en/account/reset", icon: "repeat"},
         {name: "客服工单", url: "https://support.robertsspaceindustries.com/hc/en-us/requests", icon: "edit"},
         {name: "账户设置", url: "https://robertsspaceindustries.com/account/settings", icon: "cogs"}
       ]
